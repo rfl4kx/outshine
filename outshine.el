@@ -1012,10 +1012,10 @@ This function takes `comment-end' into account."
       "for easy outline-mode keybindings"))
   (add-hook 'outline-mode-hook
             '(lambda ()
-               (require 'outline-mode-easy-bindings)))
+               (load "outline-mode-easy-bindings")))
   (add-hook 'outline-minor-mode-hook
             '(lambda ()
-               (require 'outline-mode-easy-bindings))))
+               (load "outline-mode-easy-bindings"))))
  
 ;; ** From `outline-magic'
 
